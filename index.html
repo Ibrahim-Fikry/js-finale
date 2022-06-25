@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibrahim fikry</title>
+    <!-- ------------------css----------------------- -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- foontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class=" overflow-hidden bg-dark">
+    <!-- -------------------  fixed parrts ------->
+    <!-- loooooading  -->
+    <div class="loading w-100 vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center  ">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- side -->
+    <div class="side  position-fixed top-0 start-0  ">
+        <div class="row vh-100  ">
+            <div class="col-md-9 bg-dark   hiddenside  pt-3 ">
+                <!-- navebar -->
+                <div class="d-flex flex-column justify-content-between  vh-100">
+                    <div class="nav-item  ">
+                        <ul class=" ">
+                            <li class="item0 ">
+                                <a class="nav-category " href="#">Now playing</a></li>
+                            <li class="item1"><a class="nav-category" href="#">Popular</a></li>
+                            <li class="item2" href="#"><a class="nav-category" href="#">Top Rated</a></li>
+                            <li class="item3" href="#"><a class="nav-category" href="#">Trending</a></li>
+                            <li class="item4" href="#"><a class="nav-category">Upcoming</a></li>
+                            <li class="item5" href="#"><a class="nav-category Contactbtn " href="#contact ">Contact Us</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="nav-social-item ps-2 ">
+                        <div class="d-flex justify-content-around ">
+                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                            <a href="# "><i class="fab fa-twitter "></i></a>
+                            <a href="# "><i class="fas fa-globe "></i></a>
+                        </div>
+                        <div class="pt-3 ">
+                            <span>Copyright Â© 2019 All Rights Reserved.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 bg-danger pe-2 pt-1 bg-white appeardside d-flex flex-column justify-content-between text-center ">
+
+                <div><img src="images/side.png " class="w-50 " alt=" "></div>
+                <div><i class="fa fa-align-justify fa-2x btnside "></i></div>
+                <div class="d-flex flex-column ">
+                    <i class="fas fa-globe fa-1x mb-2 "></i>
+                    <i class="fas fa-share-alt fa-1x mb-2 "></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- End fixed parrts ------->
+
+    <div class="container mt-5 pb-5 Header ">
+        <!-- ------------------- start Header ------->
+        <div class="row d-flex justify-content-around ">
+            <div class="col-md-5 ">
+                <input type="text " class="w-100 bg-dark GetMoviesByWords " autocomplete="off " placeholder="Get Movies By Words .... ">
+            </div>
+            <div class="col-md-5 ">
+                <input type="text " class="w-100 bg-dark Search " autocomplete="off " placeholder="Search .... ">
+            </div>
+        </div>
+        <!-- ------------------- End Header ------->
+        <!-- ------------------- start movies ------->
+        <div class="row mt-5 displaymovies ">
+            <div class="col-md-4 p-0 ">
+                <!-- <div class="p-4 ">
+                    <div class="bg-info text-center cardmovie position-relative ">
+                        <img src="images/New folder/client-1.png " class="w-100 " alt=" ">
+
+                        <div class=" w-100 h-100 position-absolute top-0 start-0 fixedmovie p-2 ">
+                            <h2>S. Darko</h2>
+                            <p>S. Darko follows Samantha Darko, the younger sister of Donnie, the protagonist of Donnie Darko, and her friend Corey. On their way to California, their car breaks down, forcing them to wait in a small town until it is fixed.
+                                While there, Samantha begins to have dreams that warn her of the end of the universe.</p>
+                            <p>2009-04-28</p>
+                            <p>rate: 4.4</p>
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+
+
+
+
+        </div>
+        <!-- ------------------- End movies ------->
+        <!-- ------------------- start contactus ------->
+
+        <div id="contact ">
+            <h2 class="text-light my-5 ">ContacUs...</h2>
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " id="name " placeholder="Enter Your Name ">
+                        <div class="alert alert-danger " id="namealert " role="alert " style="display: block; ">
+                            Your Name is not valid
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " id="email " placeholder="Enter Email ">
+                        <div class="alert alert-danger " id="emailalert " role="alert ">
+                            entre valid email
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " id="phone " placeholder="Enter phone ">
+                        <div class="alert alert-danger " id="phonealert " role="alert ">
+                            entre valid phone
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " id="age " placeholder="Enter Age ">
+                        <div class="alert alert-danger " id="agealert " role="alert " style="display: none; ">
+                            entre valid Age
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " type="password " id="password " placeholder="Enter Password ">
+                        <div class="alert alert-danger " id="passwordalert " role="alert ">
+                            entre valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="form-group ">
+                        <input class="form-control " type="password " id="rePassword " placeholder="Enter RePassword ">
+                        <div class="alert alert-danger " id="repasswordalert " role="alert ">
+                            entre valid Repassword
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button type="submit " disabled=" " id="submitBtn " class="btn btn-outline-danger ">Submit</button>
+            <button class=" btn btn-outline-danger ">Submit</button>
+
+        </div>
+
+        <!-- ------------------- end contactus ------->
+    </div>
+
+
+
+
+
+
+
+    <!-- ------------------scripts----------------------- -->
+    <!-- bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <!-- jq -->
+    <script src="jquery-3.6.0.min.js "></script>
+    <!-- jq ui -->
+    <script src="jquery-ui.min.js "></script>
+    <!-- mainjs -->
+    <script src="main.js "></script>
+
+</body>
+
+</html>
