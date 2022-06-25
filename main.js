@@ -170,6 +170,19 @@ $(document).ready(function() {
         let ApisearchmoviesUrl = `/search/movie?${ApiKey}&query=${searchword}`
         general(ApisearchmoviesUrl)
     }
+
+    // --------search2
+    let textsearch2 = $('.Search')
+    $('.Search').keyup(function() {
+        let textsearch2val = textsearch2.val()
+        search(textsearch2val)
+    })
+
+    function search(searchword) {
+        // searchmovies?
+        let ApisearchmoviesUrl = `/search/movie?${ApiKey}&query=${searchword}`
+        general(ApisearchmoviesUrl)
+    }
     //#endregion
     //#region -----------------------------start movies
 
@@ -197,4 +210,12 @@ $(document).ready(function() {
     $('.fixedmovie').hide()
 
     //#endregion
+
+
+
+
+    //#region ------------------ start contactus ---
+
+    $('.alert-danger').hide()
+        //#endregion
 })
